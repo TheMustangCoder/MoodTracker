@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoodTracker - Home</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>MoodTracker</h1>
+    <nav>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="mood-entry">
+      <h2>Log Your Mood</h2>
+      <select id="mood-select">
+        <option value="happy">Happy 😊</option>
+        <option value="sad">Sad 😢</option>
+        <option value="neutral">Neutral 😐</option>
+        <option value="angry">Angry 😠</option>
+      </select>
+      <button id="save-mood">Save Mood</button>
+    </section>
+
+    <section id="mood-log">
+      <h2>Your Mood Log</h2>
+      <ul id="mood-list">
+        <!-- Dynamic mood log entries will appear here -->
+      </ul>
+    </section>
+  </main>
+
+  <script src="../js/app.js"></script>
+</body>
+</html>
