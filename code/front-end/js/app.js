@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const moodSelect = document.getElementById('mood-select');
     const saveMoodButton = document.getElementById('save-mood');
     const moodList = document.getElementById('mood-list');
+    const username = localStorage.getItem('username');
   
     // Load moods from local storage
     const moods = JSON.parse(localStorage.getItem('moods')) || [];
@@ -27,6 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
         listItem.textContent = `${entry.date}: ${entry.mood}`;
         moodList.appendChild(listItem);
       });
+    }
+
+    if(username){
+      document.getElementById("greeting").textContent = 'Hello, ${username}! How are you?';
     }
   
     // Initial load
