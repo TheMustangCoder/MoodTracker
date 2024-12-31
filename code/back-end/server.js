@@ -9,7 +9,7 @@ app.use(express.static(path.join(__dirname, '../front-end')));
 
 // Default route (serving the main page)
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../front-end/pages/index.html'));
+  res.sendFile(path.join(__dirname, '../front-end/pages/login.html'));
 });
 
 // Start the server
