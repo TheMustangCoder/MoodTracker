@@ -3,14 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Journaling Tracker</title>
+  <title>MoodTracker - Home</title>
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+  <div id="menu-container"></div>
+  <header>
+    <!-- <nav>
+      <a href="/pages/about.html">About</a>
+      <a href="/pages/contact.html">Contact</a>
+    </nav> -->
+    <h1 class="moodtracker-title">MoodTracker</h1>
+  </header>
 
-<header>
-  <h1>Journaling Tracker</h1>
-</header>
+  <div class="center-box">
+   <h3 id="greeting">Get ready to log your mood today !!</h3> 
 
 <main>
   <h2>Track Your Journaling Habit</h2>
@@ -19,13 +26,22 @@
   <div class="modal" id="journal-modal">
     <div class="modal-content">
       <h3>Journal Entry</h3>
+      <input>d
       <textarea id="journal-entry"></textarea>
+
       <button id="save-entry">Save</button>
     </div>
   </div>
+  <section id="journal-log">
+    <h2>Your Journal Log</h2>
+    <ul id="mood-list">
+      <!-- Dynamic mood log entries will appear here -->
+    </ul>
+  </section>
 </main>
 
 <script src="track-mood.js"></script>
 
 </body>
 </html>
+    
